@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<SCRipt>
+
+    function pulaLinha() {
+     
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    
+    var numeroPensado = Math.round(Math.random()*10);
+    // console.log(numeroPensado);      USADO PARA TESTAR
+    
+    var chute = parseInt(prompt("Digite seu chute!"));
+
+    if(chute == numeroPensado) {
+        mostra("Você acertou!");
+
+    } else {
+        mostra("Você errou, o número pensado foi " + numeroPensado);
+    }
+
+</SCRipt>
+
+<!-- Math.round >>>> Arredounda meu numero
+
+Math.random >>>> Me dá numeros aleatorios 
+
+console.log(numeroPensado);>>>> usado para testar
+-->
